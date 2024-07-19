@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    position: absolute;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.div2 , .div4 , .div6 , .div8 {
+    animation-direction: reverse;
+    left: 1425px;
+}
+
+.div2 {
+    top: 175px;
+    animation-delay: 4s;
+}
+
+.div3 {
+    top: 325px;
+    animation-delay: 8s;
+}
+
+.div4 {
+    top: 475px;
+    animation-delay: 12s;
+}
+
+.div5 {
+    top: 625px;
+    animation-delay: 16s;
+}
+
+.div6 {
+    top: 775px;
+    animation-delay: 20s;
+}
+
+.div7 {
+    top: 925px;
+    animation-delay: 24s;
+}
+
+.div8 {
+    top: 1075px;
+    animation-delay: 28s;
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+    }
+
+    99% {
+        transform: rotatey(0deg);
+    }
+
+    100% {
+        left: 1425px;
+        transform: rotatey(180deg);
+    }
+}
+
+/* ///////////////////////////////////////////////////////////////////////////// */
